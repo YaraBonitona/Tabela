@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Os filmes da Barbie</title>
+</head>
+<body>
+
+  <table border="1" width="100%" cellpadding="48" cellspacing="0" align="center">
+
+    <!-- Cabeçalho -->
+    <tr align="center" bgcolor="pink">
+      <th colspan="3"><h1>✨ Os filmes da Barbie ✨</h1></th>
+    </tr>
+
+    <!-- Conteúdo -->
+    <tr valign="top" align="left">
+
+      <!-- Menu lateral -->
+      <td width="20%" height="500" bgcolor="lightgray">
+        <h3>📌 Menu</h3>
+        <hr>
+        <ul>
+          <li><a href="#" onclick="mostrar('sobre')">Sobre</a></li>
+          <li><a href="#" onclick="mostrar('mensagens')">Mensagens</a></li>
+          <li><a href="#" onclick="mostrar('classicos')">Clássicos</a></li>
+          <li><a href="#" onclick="mostrar('curiosidades')">Curiosidades</a></li>
+        </ul>
+      </td>
+
+      <!-- Texto central -->
+      <td width="60%" bgcolor="white">
+        <div id="conteudo">
+          <h2>Bem-vindo!</h2>
+          <p>Clique nos itens do menu ao lado para ver o conteúdo aqui.</p>
+        </div>
+      </td>
+
+      <!-- Links rápidos -->
+      <td width="20%" bgcolor="lightgray" align="left">
+        <h3>🔗 Links Rápidos</h3>
+        <hr>
+        <ul>
+          <li><a href="https://pt.wikipedia.org/wiki/Lista_de_filmes_da_Barbie" target="_blank">Lista de Filmes (Wikipedia)</a></li>
+          <li><a href="https://www.youtube.com/results?search_query=barbie+filmes" target="_blank">Trailers no YouTube</a></li>
+          <li><a href="https://www.netflix.com/br/title/81212953" target="_blank">Barbie na Netflix</a></li>
+          
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Rodapé -->
+    <tr align="center" bgcolor="pink">
+      <td colspan="3">
+        <small>Copyright © 2025 - Criado por Yara Linda 🎀</small>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Script para trocar o conteúdo -->
+  <script>
+    function mostrar(secao) {
+      let conteudo = document.getElementById("conteudo");
+
+      if (secao === "sobre") {
+        conteudo.innerHTML = `
+          <h2>🎀 Sobre os filmes da Barbie</h2>
+          <p>Os filmes da Barbie encantam crianças e jovens com histórias de fantasia,
+          aventura e amizade. Além de entreter, transmitem valores como coragem,
+          solidariedade e a importância de acreditar em si mesmo.</p>
+        `;
+      }
+
+      else if (secao === "mensagens") {
+        conteudo.innerHTML = `
+          <h2>💡 O que os filmes ensinam</h2>
+          <ul>
+            <li>Coragem para enfrentar desafios.</li>
+            <li>Amizade e trabalho em equipe.</li>
+            <li>Autoconfiança e respeito às diferenças.</li>
+          </ul>
+        `;
+      }
+
+      else if (secao === "classicos") {
+        conteudo.innerHTML = `
+          <h2>🎬 Alguns clássicos</h2>
+          <ol>
+            <li>Barbie em o Quebra-Nozes (2001)</li>
+            <li>Barbie: Lago dos Cisnes (2003)</li>
+            <li>Barbie: A Princesa e a Plebeia (2004)</li>
+          </ol>
+          <p>
+            
+          </p>
+        `;
+      }
+
+      else if (secao === "curiosidades") {
+        conteudo.innerHTML = `
+          <h2>✨ Curiosidades</h2>
+          <ul>
+            <li>O primeiro filme foi lançado em 2001.</li>
+            <li>Já existem mais de 40 filmes da Barbie.</li>
+            <li>Muitos contam com músicas originais inesquecíveis.</li>
+          </ul>
+        `;
+      }
+    }
+  </script>
+
+</body>
+</html>
